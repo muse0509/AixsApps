@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0f172a; /* 濃い青系の背景色 */
+  color: #f8fafc; /* 明るい文字色 */
+}
