@@ -42,8 +42,9 @@ export const calculateIndexHistory = (
   const timeline = getTimeline(assets);
   const constituentAssets = indexDef.constituents.map(symbol => assets[symbol]).filter(Boolean);
 
-  let history: IndexHistoryPoint[] = [];
+  const history: IndexHistoryPoint[] = [];
   let baseIndexValue = 0;
+
 
   // タイムライン（日付ごと）にループ
   for (const date of timeline) {

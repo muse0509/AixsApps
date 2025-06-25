@@ -6,7 +6,7 @@ import { Wallet } from 'lucide-react';
 
 export const WalletButton = () => {
   const { setVisible } = useWalletModal();
-  const { wallet, connect, connected, disconnect, publicKey } = useWallet();
+  const { connected, disconnect, publicKey } = useWallet();
 
   const shortenAddress = (address: string) => {
     return `${address.slice(0, 4)}...${address.slice(-4)}`;
